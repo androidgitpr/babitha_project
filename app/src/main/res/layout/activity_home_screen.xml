@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp">
+
+        <include layout="@layout/view_bottom_anchor" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/priceid"
+                        android:text="Price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/price1"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#000"
+                        android:background="@drawable/border"/>
+
+                    <TextView
+                        android:text="Stock"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/stockid"
+                        android:layout_marginLeft="5dp"
+                        android:drawableTop="@drawable/stock1"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:textSize="16sp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="#000"
+                        android:background="@drawable/border"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/collectionid"
+                        android:text="Collections"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:visibility="gone"
+                        android:textColor="#000"
+                        android:layout_marginLeft="5dp"
+                        android:drawableTop="@drawable/collection1"
+                        android:background="@drawable/border" />
+
+                    <TextView
+                        android:id="@+id/expenseid"
+                        android:text="Expenses"
+                        android:drawableTop="@drawable/expences1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:visibility="gone"
+                        android:textColor="#000"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/border"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/crdt"
+                        android:text="Credit Transaction"
+                        android:layout_width="wrap_content"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#000"
+                        android:drawableTop="@drawable/credittrans"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"/>
+
+                    <TextView
+                        android:id="@+id/crd_setup"
+                        android:text="Credit Setup"
+                        android:gravity="center"
+                        android:drawableTop="@drawable/credistup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:visibility="gone"
+                        android:textColor="#000"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/border"/>
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/regstr"
+                        android:text="Register"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:textColor="#000"
+                        android:layout_marginLeft="5dp"
+                        android:drawableTop="@drawable/register"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"/>
+
+                    <TextView
+                        android:id="@+id/access"
+                        android:text="Access Control"
+                        android:layout_width="wrap_content"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:textColor="#000"
+                        android:layout_marginLeft="5dp"
+                        android:drawableTop="@drawable/register"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"/>
+                </TableRow>
+
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/emp_details"
+                        android:text="Employment Details"
+                        android:layout_width="wrap_content"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:textColor="#000"
+                        android:layout_marginLeft="5dp"
+                        android:drawableTop="@drawable/register"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"/>
+
+                </TableRow>
+
+            </TableLayout>
+
+        </ScrollView>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

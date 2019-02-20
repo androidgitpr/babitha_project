@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.CreditTransactionFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/spinnercr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_bg"
+                android:layout_marginTop="15dp">
+
+            </Spinner>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_check"/>
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_clear"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Date"
+                    android:gravity="center" />
+
+                <EditText
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="Time"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:layout_marginTop="16dp">
+
+                <CheckBox android:id="@+id/checkbox_petrol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Petrol"
+                    android:layout_weight="1"/>
+
+                <CheckBox android:id="@+id/checkbox_diesel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Diesel"
+                    android:layout_weight="1"
+                    />
+
+                <CheckBox android:id="@+id/checkbox_oil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Diesel"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:layout_marginTop="16dp">
+
+                <EditText android:id="@+id/rate_petrol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="500"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+
+                <EditText android:id="@+id/rate_diesel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="400"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    />
+
+                <EditText android:id="@+id/rate_oil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginTop="16dp">
+
+
+                <EditText
+                    android:id="@+id/chalan_path"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Chalan Path"/>
+
+                <Button
+                    android:id="@+id/chalan_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Upload Chalan"/>
+            </LinearLayout>
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:layout_marginLeft="100dp"
+                    android:textColor="@color/white"
+                    android:background="@color/colorPrimary"/>
+
+
+
+                <Button
+                    android:id="@+id/btn_Update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="40dp"
+                    android:background="@color/colorPrimary"
+                    android:text="Update"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true">
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

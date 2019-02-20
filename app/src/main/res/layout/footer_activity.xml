@@ -1,0 +1,57 @@
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/footer_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/footer_home"
+            android:text="Home"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+            android:textColor="#fff"/>
+        <TextView
+            android:id="@+id/footer_user"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_person"
+            android:text="User Guide"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+            android:textColor="#fff"/>
+        <TextView
+            android:id="@+id/footer_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/whatsapp_icon"
+            android:layout_weight="1"
+            android:text="Whatsapp"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/footer_call"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_call"
+            android:text="Call"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+</RelativeLayout>

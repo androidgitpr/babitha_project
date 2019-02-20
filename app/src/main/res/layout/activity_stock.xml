@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.StockActivity">
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="70dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Date"
+                android:gravity="center"
+                android:layout_marginRight="10dp"/>
+
+          <EditText
+              android:id="@+id/time"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:hint="Time"
+              android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+
+        <TableLayout
+            android:id="@+id/triptablid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    android:text="Name"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    android:text="Stock"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    android:text="% of Loss"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text=" Actual Stock"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"/>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tablerow2"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:text="Petrol"/>
+
+               <EditText
+                   android:id="@+id/pet1"
+                   android:layout_width="0dp"
+                   android:gravity="center"
+                   android:layout_gravity="center_vertical"
+                   android:layout_height="match_parent"/>
+                <EditText
+                    android:id="@+id/pet2"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="match_parent"/>
+                <EditText
+                    android:id="@+id/pet3"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="match_parent"/>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tablerow3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:text="Diesel"/>
+
+                <EditText
+                    android:id="@+id/des1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="16sp" />
+                <EditText
+                    android:id="@+id/des2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"/>
+                <EditText
+                    android:id="@+id/des3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"/>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tablerow4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:text="Oil"/>
+
+                <EditText
+                    android:id="@+id/oil1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+                <EditText
+                    android:id="@+id/oil2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+                <EditText
+                    android:id="@+id/oil3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+
+            </TableRow>
+        </TableLayout>
+
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="UPDATE"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+    </FrameLayout>
+
+</RelativeLayout>

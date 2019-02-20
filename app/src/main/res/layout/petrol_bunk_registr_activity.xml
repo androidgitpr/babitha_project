@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/pbnameId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Petrol Bunk Name"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:layout_margin="5dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/anameId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Area Name"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_margin="5dp"/>
+
+            <EditText
+                android:id="@+id/addessId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Address"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_margin="5dp"/>
+
+            <EditText
+                android:id="@+id/pinId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Pin Code"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_margin="5dp"/>
+
+            <EditText
+                android:id="@+id/mangrNameId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Manager Names"
+                android:textColor="#000000"
+                android:inputType="textPersonName"
+                android:textSize="16sp"
+                android:layout_margin="5dp"/>
+
+            <EditText
+                android:id="@+id/mangrContactId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:hint="Manager Contact No"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_margin="5dp"/>
+            <EditText
+                android:id="@+id/usrnameId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:hint="Office Phone No"
+                android:visibility="visible"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_margin="5dp"/>
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:hint="Same As Managers Contact No"
+                android:visibility="visible"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_margin="5dp" />
+
+
+            <Button
+                android:id="@+id/submitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="Submit"
+                android:textColor="#fff"
+                android:layout_margin="20dp"
+                android:background="@color/colorPrimary"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</android.support.constraint.ConstraintLayout>

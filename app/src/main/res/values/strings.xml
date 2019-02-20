@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">BabitaFuels</string>
+    <string name="title_home">Home</string>
+    <string name="title_call">Call</string>
+    <string name="title_register">Registration</string>
+    <string name="title_userguide">User Guide</string>
+    <string name="title_credit_setup">Credit Setup</string>
+    <string name="title_logout">Logout</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="crash_toast_text">Oops Crashe Occurred</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">LOGIN</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."
+    </string>
+
+
+    <string-array name="outlet">
+        <item>Login As</item>
+        <item>xyz</item>
+        <item>pqr</item>
+        <item>other</item>
+    </string-array>
+
+    <string-array name="outlet1">
+        <item>Outlet</item>
+        <item>xyz</item>
+        <item>pqr</item>
+        <item>other</item>
+    </string-array>
+</resources>
+

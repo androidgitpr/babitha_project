@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearlyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/fromspinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinner_bg"/>
+
+                <Spinner
+                    android:id="@+id/tospinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinner_bg"/>
+
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/triptablid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/salary1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_above="@+id/button"
+                        android:text="Salary"
+                        android:textSize="16sp"
+                        android:layout_gravity="center" />
+
+                    <TextView
+                        android:id="@+id/advpaid1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="Advance Paid"
+                        android:textSize="16sp"
+                        android:layout_gravity="center" />
+
+                    <TextView
+                        android:id="@+id/balnc1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="Balance"
+                        android:textSize="16sp"
+                        android:layout_gravity="center" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal">
+
+                    <EditText
+                        android:id="@+id/salaryEdit"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_above="@+id/button"
+                        android:text=""
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/advcEdit"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text=" "
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/balcEdit"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text=""
+                        android:textSize="16sp" />
+
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</android.support.constraint.ConstraintLayout>

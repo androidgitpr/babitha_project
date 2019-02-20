@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/control_overview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="center_horizontal|top"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#03A14D" />
+
+    <TextView
+        android:id="@+id/new_offers_banner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:background="@color/colorPrimary"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:freezesText="true"
+        android:gravity="center_vertical"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingLeft="10dp"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="Welcome to Cubs-The Pre School parental application"
+        android:textColor="@color/white"
+        android:textSize="20sp"></TextView>
+
+
+</LinearLayout>
